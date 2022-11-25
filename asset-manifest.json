@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/maple-check-app/static/css/main.e6c13ad2.css",
+    "main.js": "/maple-check-app/static/js/main.9235e3b6.js",
+    "static/js/787.0bd42a79.chunk.js": "/maple-check-app/static/js/787.0bd42a79.chunk.js",
+    "index.html": "/maple-check-app/index.html",
+    "main.e6c13ad2.css.map": "/maple-check-app/static/css/main.e6c13ad2.css.map",
+    "main.9235e3b6.js.map": "/maple-check-app/static/js/main.9235e3b6.js.map",
+    "787.0bd42a79.chunk.js.map": "/maple-check-app/static/js/787.0bd42a79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.9235e3b6.js"
+  ]
+}
