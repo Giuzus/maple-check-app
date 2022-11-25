@@ -1,6 +1,7 @@
 {
   "name": "maple-check-app",
   "version": "0.1.0",
+  "homepage": "https://giuzus.github.io/maple-check-app",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.0",
@@ -16,13 +17,16 @@
     "react-redux": "^8.0.5",
     "react-scripts": "^5.0.1",
     "typescript": "^4.9.3",
+    "uuid": "^9.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +45,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/uuid": "^8.3.4",
+    "gh-pages": "^4.0.0"
   }
 }
