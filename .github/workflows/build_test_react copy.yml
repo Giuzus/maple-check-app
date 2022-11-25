@@ -1,4 +1,4 @@
-name: Build and Test
+name: Build, test and publish
 
 on:
   push:
@@ -31,7 +31,7 @@ jobs:
     steps:
       - name: Test
         run: |
-        npm test --watchAll=false
+          npm test --watchAll=false
 
   deploy:
     needs: test
