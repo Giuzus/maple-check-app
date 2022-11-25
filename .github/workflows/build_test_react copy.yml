@@ -27,6 +27,7 @@ jobs:
           npm ci
           npm run build
   test:
+    runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Test
@@ -34,6 +35,7 @@ jobs:
           npm test --watchAll=false
 
   deploy:
+    runs-on: ubuntu-latest
     needs: test
     steps:
       - name: Deploy
