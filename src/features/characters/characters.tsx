@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import styles from './character.module.css';
+import styles from './characters.module.css';
 
 interface CharacterProps {}
 

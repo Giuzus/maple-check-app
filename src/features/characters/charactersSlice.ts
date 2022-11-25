@@ -32,7 +32,7 @@ export const charactersSlice = createSlice({
     },
     removeCharacter: (state, action: PayloadAction<string>) => {
 
-      state.characters = state.characters.filter((x) => x.id != action.payload)
+      state.characters = state.characters.filter((x) => x.id !== action.payload)
     }
   }
 });
