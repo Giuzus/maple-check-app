@@ -1,7 +1,7 @@
 {
   "name": "maple-check-app",
   "version": "0.1.0",
-  "homepage": "https://giuzus.github.io/maple-check-app",
+  "homepage": "https://giuzus.github.io/maple-check-app/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.0",
