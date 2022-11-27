@@ -15,7 +15,9 @@ const ServerTime: FC<ServertimeProps> = () => {
   });
 
   function tick() {
-    act (() => { setDate(new Date()); });
+    act(() => {
+      setDate(new Date());
+    });
   }
 
   return (
