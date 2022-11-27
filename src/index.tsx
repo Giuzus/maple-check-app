@@ -6,13 +6,13 @@ import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import routes from './app/routes';
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
 
-const router = createBrowserRouter(routes);
+const router = createHashRouter(routes);
 
 root.render(
   <React.StrictMode>
