@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import styles from './topbar.module.css';
 import logo from '../../assets/logo_topbar-32x32.png'
-import ServerTime from '../servertime/servertime';
+import ServerTime from '../server-time/server-time';
 
 interface TopbarProps { }
 
@@ -13,17 +13,17 @@ const Topbar: FC<TopbarProps> = () => (
     <div className={styles.Topbar__list}>
       <ul>
         <li>
-          <a href="https://maplestory.nexon.net/news" target={'_blank'}>News</a>
+          <a href="https://maplestory.nexon.net/news" target={'_blank'} rel="noreferrer">News</a>
         </li>
         <li>
-          <a>Server Time:</a> <ServerTime></ServerTime>
+          <span>Server Time:</span> <ServerTime></ServerTime>
         </li>
         <li>
-          <a href="https://github.com/Giuzus/maple-check-app" target={'_blank'}>Contact</a>
+          <a href="https://github.com/Giuzus/maple-check-app" target={'_blank'} rel="noreferrer">Contact</a>
         </li>
       </ul>
     </div>
   </div>
 );
 
-export default Topbar;
+export default Topbar; 

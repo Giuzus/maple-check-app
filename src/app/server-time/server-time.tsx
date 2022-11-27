@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
-import styles from './servertime.module.css';
+import styles from './server-time.module.css';
 
 interface ServertimeProps { }
 
-const Servertime: FC<ServertimeProps> = () => {
+const ServerTime: FC<ServertimeProps> = () => {
   const [date, setDate] = React.useState(new Date());
 
   React.useEffect(() => {
@@ -18,7 +18,7 @@ const Servertime: FC<ServertimeProps> = () => {
   }
 
   return (
-    <div className={styles.Servertime} data-testid="Servertime">
+    <div className={styles.serverTime} data-testid="ServerTime">
       <span className={styles.clock}>
         {date.toLocaleTimeString('pt-BR', { timeZone: 'UTC' })}
       </span>
@@ -26,4 +26,4 @@ const Servertime: FC<ServertimeProps> = () => {
   );
 }
 
-export default Servertime;
+export default ServerTime;

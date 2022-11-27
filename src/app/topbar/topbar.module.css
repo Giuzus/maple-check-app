@@ -9,7 +9,6 @@
     border-bottom: 0px;
 }
 
-/* style topbar__logo to be 35x35px */
 .Topbar__logo {
     width: 35px;
     height: 35px;
@@ -30,6 +29,8 @@
     align-items: flex-end;
     height: 100%;
     width: 100%;
+    color: white !important;
+    text-decoration: none;
 }
 
 .Topbar__list >ul{
