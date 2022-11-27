@@ -21,11 +21,11 @@ describe('<Servertime />', () => {
     expect(time).toHaveTextContent(new Date().toLocaleTimeString('pt-BR', { timeZone: 'UTC' }));
   });
 
-  test('time is updated every second', async () => {
+  test('clock is updating', async () => {
     const time = screen.getByTestId('ServerTime');
-    expect(time).toHaveTextContent(new Date().toLocaleTimeString('pt-BR', { timeZone: 'UTC' }));
-    setTimeout(() => {
-      expect(time).toHaveTextContent(new Date().toLocaleTimeString('pt-BR', { timeZone: 'UTC' }));
-    }, 1000);
+    const timeText = time.textContent;
+    await new Promise(r => setTimeout(r, 3000));
+    const time2 = screen.getByTestId('ServerTime');
+    expect(time2.textContent).not.toEqual(timeText);
   });
 });
