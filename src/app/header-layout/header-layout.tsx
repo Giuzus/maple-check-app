@@ -11,7 +11,7 @@ const HeaderLayout: FC<HeaderProps> = () => (
     <nav>
       <ul>
         <li>
-          <Link to={`/`}>Characters</Link>
+          <Link to={`/`}>Tasks</Link>
         </li>
         <li>
           <Link to={`checklists`}>Checklists</Link>

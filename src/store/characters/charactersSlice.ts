@@ -1,17 +1,9 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { v4 as uuidv4 } from 'uuid';
 
-export enum MaplestoryServer {
-  Reboot,
-  Bera,
-  Scania,
-  Aurora
-}
-
 export interface Character {
   id?: string;
   name: string;
-  server: MaplestoryServer
 }
 
 export interface CharactersState {
@@ -31,7 +23,6 @@ export const charactersSlice = createSlice({
       state.characters = state.characters.concat(action.payload)
     },
     removeCharacter: (state, action: PayloadAction<string>) => {
-
       state.characters = state.characters.filter((x) => x.id !== action.payload)
     }
   }

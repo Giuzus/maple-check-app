@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { createRoot } from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { store } from './app/store';
+import { store } from './store/store';
 import reportWebVitals from './reportWebVitals';
 import { createHashRouter, RouterProvider } from "react-router-dom";
 import routes from './app/routes';
