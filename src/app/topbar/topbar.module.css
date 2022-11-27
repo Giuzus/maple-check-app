@@ -1,0 +1,55 @@
+.Topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0 40px;
+    background-color: rgb(0, 0, 0);
+    border-bottom: 0px;
+}
+
+/* style topbar__logo to be 35x35px */
+.Topbar__logo {
+    width: 35px;
+    height: 35px;
+}
+
+.Topbar__Logo {
+    display: flex;
+
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 84px;
+    max-height: 84px;
+}
+
+.Topbar__list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    width: 100%;
+}
+
+.Topbar__list >ul{
+    list-style-type: none;
+    display: flex;
+    align-items: flex-end;
+}
+
+.Topbar__list >ul >li{
+    padding: 0 100px;
+    justify-content: space-evenly;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Topbar__list >ul >li >a{
+    color: white !important;
+    text-decoration: none;
+}
+
+
+
+

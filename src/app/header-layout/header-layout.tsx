@@ -1,11 +1,13 @@
 import React, { FC } from 'react';
-import styles from './header.module.css';
+import styles from './header-layout.module.css';
 import { Outlet, Link } from "react-router-dom";
+import Topbar from '../topbar/topbar';
 
 interface HeaderProps { }
 
-const Header: FC<HeaderProps> = () => (
+const HeaderLayout: FC<HeaderProps> = () => (
   <div className={styles.Header} data-testid="Header">
+    <Topbar></Topbar>
     <nav>
       <ul>
         <li>
@@ -21,4 +23,4 @@ const Header: FC<HeaderProps> = () => (
   </div>
 );
 
-export default Header;
+export default HeaderLayout;
