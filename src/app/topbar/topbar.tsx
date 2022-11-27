@@ -13,13 +13,13 @@ const Topbar: FC<TopbarProps> = () => (
     <div className={styles.Topbar__list}>
       <ul>
         <li>
-          <a href="https://maplestory.nexon.net/news" target={'_blank'} rel="noreferrer">News</a>
+          <a href="https://maplestory.nexon.net/news" target={'_blank'} rel="noreferrer" data-testid='news'>News</a> 
         </li>
         <li>
           <span>Server Time:</span> <ServerTime></ServerTime>
         </li>
         <li>
-          <a href="https://github.com/Giuzus/maple-check-app" target={'_blank'} rel="noreferrer">Contact</a>
+          <a href="https://github.com/Giuzus/maple-check-app" target={'_blank'} rel="noreferrer" data-testid='contact'>Contact</a>
         </li>
       </ul>
     </div>

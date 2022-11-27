@@ -4,25 +4,28 @@ import '@testing-library/jest-dom/extend-expect';
 import Servertime from './server-time';
 
 describe('<Servertime />', () => {
-  test('it should mount', () => {
+  beforeEach(() => {
     render(<Servertime />);
-    
-    const servertime = screen.getByTestId('Servertime');
+  });
+
+  test('it should mount', () => {
+
+    const servertime = screen.getByTestId('ServerTime');
 
     expect(servertime).toBeInTheDocument();
 
-    test('should have a clock', async () => {
-    const time = screen.getByTestId('time');
-    expect(time).toHaveTextContent(new Date().toLocaleTimeString('pt-BR', { timeZone: 'UTC' }));
-    });
+  });
 
-    test('time is updated every second', async () => {
-      const time = screen.getByTestId('time');
+  test('should have a clock', async () => {
+    const time = screen.getByTestId('ServerTime');
+    expect(time).toHaveTextContent(new Date().toLocaleTimeString('pt-BR', { timeZone: 'UTC' }));
+  });
+
+  test('time is updated every second', async () => {
+    const time = screen.getByTestId('ServerTime');
+    expect(time).toHaveTextContent(new Date().toLocaleTimeString('pt-BR', { timeZone: 'UTC' }));
+    setTimeout(() => {
       expect(time).toHaveTextContent(new Date().toLocaleTimeString('pt-BR', { timeZone: 'UTC' }));
-      setTimeout(() => {
-        expect(time).toHaveTextContent(new Date().toLocaleTimeString('pt-BR', { timeZone: 'UTC' }));
-      }, 1000);
-    });
-  
+    }, 1000);
   });
 });
