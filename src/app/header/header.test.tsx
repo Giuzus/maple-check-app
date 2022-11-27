@@ -18,7 +18,7 @@ describe('<Header />', () => {
   });
   
   test('should have a characters link', async () => {
-    const link = await screen.findByText("Characters")
+    const link = await screen.findByText("Tasks")
     expect(link).toContainHTML(`href="/"`)
   });
 

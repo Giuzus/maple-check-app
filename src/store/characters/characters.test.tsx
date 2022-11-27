@@ -1,14 +1,12 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import charactersReducer, {
   addCharacter,
   CharactersState,
-  MaplestoryServer,
   removeCharacter
 } from './charactersSlice';
 
-describe('<Character />', () => {
+describe('Characters store', () => {
   const initialState: CharactersState = {
     characters: []
   };
@@ -21,18 +19,15 @@ describe('<Character />', () => {
   it('should add a new character', () => {
     const actual = charactersReducer(initialState, addCharacter({
       name: "Test char",
-      server: MaplestoryServer.Reboot
     }));
     
     expect(actual.characters.length).toEqual(1);
     expect(actual.characters[0].name).toEqual("Test char")
-    expect(actual.characters[0].server).toEqual(MaplestoryServer.Reboot)
   });
 
   it('should remove a character', () => {
     let actual = charactersReducer(initialState, addCharacter({
-      name: "Test char",
-      server: MaplestoryServer.Reboot
+      name: "Test char"
     }));
     
     expect(actual.characters.length).toEqual(1);
