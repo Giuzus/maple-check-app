@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Header from './header';
+import Headerlayout from './header-layout';
 import { BrowserRouter } from 'react-router-dom'
 
 describe('<Header />', () => {
@@ -9,7 +9,7 @@ describe('<Header />', () => {
   let header: HTMLElement;
 
   beforeEach(() => {
-    render(<Header />, {wrapper: BrowserRouter});
+    render(<Headerlayout />, {wrapper: BrowserRouter});
     header = screen.getByTestId('Header');
   })
 
