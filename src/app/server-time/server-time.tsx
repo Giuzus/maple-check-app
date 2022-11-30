@@ -23,10 +23,11 @@ const ServerTime: FC<ServertimeProps> = () => {
   return (
     <div className={styles.serverTime} data-testid="ServerTime">
       <span className={styles.clock}>
-        {date.toLocaleTimeString('pt-BR', { timeZone: 'UTC' })}
+        {date.toLocaleTimeString('pt-BR', { timeZone: 'UTC' }).slice(0, -3)}
       </span>
     </div>
   );
-}
+};
+
 
 export default ServerTime;

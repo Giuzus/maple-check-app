@@ -7,22 +7,12 @@ interface TopbarProps { }
 
 const Topbar: FC<TopbarProps> = () => (
   <div className={styles.Topbar} data-testid="Topbar">
+    <span className={styles.Topbar__name}>MAPLECHECK</span>
     <div className={styles.Topbar__logo}>
       <img src={logo} alt="logoTopBar" />
     </div>
-    <div className={styles.Topbar__list}>
-      <ul>
-        <li>
-          <a href="https://maplestory.nexon.net/news" target={'_blank'} rel="noreferrer" data-testid='news'>News</a> 
-        </li>
-        <li>
-          <span>Server Time:</span> <ServerTime></ServerTime>
-        </li>
-        <li>
-          <a href="https://github.com/Giuzus/maple-check-app" target={'_blank'} rel="noreferrer" data-testid='contact'>Contact</a>
-        </li>
-      </ul>
-    </div>
+    <ServerTime></ServerTime>
+    <span className={styles.Topbar__clock}>SERVER TIME</span>
   </div>
 );
 

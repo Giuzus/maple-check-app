@@ -3,25 +3,43 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 95px;
     padding: 0 40px;
-    background-color: rgb(0, 0, 0);
+    background-color: #28325b;
     border-bottom: 0px;
 }
 
-.Topbar__logo {
-    width: 35px;
-    height: 35px;
+.Topbar__name{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
 }
 
-.Topbar__Logo {
-    display: flex;
+.Topbar__logo {
+    width: 95px;
+    height: 95px;
+    position: absolute;
+    top: 8px;
+    left: 415px;
+    scale: 0.7;
+}
 
+
+/*align Topbar__clock to the right*/
+.Topbar__clock {
+    position: absolute;
+    top: 65px;
+    right: 0;
+    margin: 0 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     font-weight: 700;
-    max-width: 84px;
-    max-height: 84px;
+    color: #5295ee;
+    letter-spacing: -1px;
 }
+
+
 
 .Topbar__list {
     display: flex;
@@ -46,9 +64,16 @@
     font-weight: 500;
 }
 
-.Topbar__list >ul >li >a{
-    color: white !important;
-    text-decoration: none;
+.server-time{
+    position: absolute;
+    top: 65px;
+    right: 0;
+    margin: 0 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #5295ee;
+    letter-spacing: -1px;
 }
 
 
