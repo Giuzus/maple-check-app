@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
-import { Button } from 'react-bootstrap';
-import { store } from '../../store/store';
+import { Button, Col } from 'react-bootstrap';
+import CharacterList from '../character-list/character-list';
 import CreateCharacterModal from '../create-character-modal/create-character-modal';
 import styles from './tasks.module.css';
 
@@ -16,12 +16,9 @@ const Tasks: FC<TasksProps> = () => {
     <div className={styles.Tasks} data-testid="Tasks">
       <Button onClick={showCharacterCreationModal}> Add character </Button>
       <CreateCharacterModal show={show} close={handleCloseCharacterCreationModal}></CreateCharacterModal>
-      <ul>
-        {
-          //temporary code to show characters
-          store.getState().characters.characters.map((character) => <li key={character.id}>{character.name}</li>)
-        }
-      </ul>
+      <Col sm={2}>
+        <CharacterList></CharacterList>
+      </Col>
     </div >
   )
 };

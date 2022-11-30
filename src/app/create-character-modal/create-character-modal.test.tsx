@@ -34,7 +34,7 @@ describe('<CreateCharacterModal />', () => {
     expect(handleClose).toHaveBeenCalled();
 
     //check if character was added to store
-    const character = store.getState().characters.characters.find(c => c.name === "Test character");
+    const character = store.getState().charactersState.characters.find(c => c.name === "Test character");
     expect(character).not.toBeUndefined();
   });
 });
