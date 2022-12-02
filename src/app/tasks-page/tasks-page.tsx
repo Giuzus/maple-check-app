@@ -1,7 +1,5 @@
-import React, { FC, useState } from 'react';
-import { Button, Col } from 'react-bootstrap';
+import React, { FC } from 'react';
 import CharacterList from '../character-list/character-list';
-import CreateCharacterModal from '../create-character-modal/create-character-modal';
 import styles from './tasks-page.module.css';
 
 interface TasksPageProps { }

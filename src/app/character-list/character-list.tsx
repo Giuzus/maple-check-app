@@ -4,7 +4,7 @@ import styles from './character-list.module.css';
 import classNames from 'classnames';
 import { useSelector } from 'react-redux';
 import { Character, setSelectedCharacter } from '../../store/characters/charactersSlice';
-import { Button, Col } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import CreateCharacterModal from '../create-character-modal/create-character-modal';
 
 interface CharacterListProps { }
