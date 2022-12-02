@@ -7,11 +7,13 @@ export interface Character {
 }
 
 export interface CharactersState {
-  characters: Character[]
+  characters: Character[];
+  selectedCharacter: Character | null;
 }
 
 const initialState: CharactersState = {
-  characters: []
+  characters: [],
+  selectedCharacter: null
 };
 
 export const charactersSlice = createSlice({
@@ -24,10 +26,13 @@ export const charactersSlice = createSlice({
     },
     removeCharacter: (state, action: PayloadAction<string>) => {
       state.characters = state.characters.filter((x) => x.id !== action.payload)
+    },
+    setSelectedCharacter: (state, action: PayloadAction<Character>) => {
+      state.selectedCharacter = action.payload
     }
   }
 });
 
-export const { addCharacter, removeCharacter } = charactersSlice.actions;
+export const { addCharacter, removeCharacter, setSelectedCharacter } = charactersSlice.actions;
 
 export default charactersSlice.reducer;

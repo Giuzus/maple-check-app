@@ -8,14 +8,8 @@ interface TasksPageProps { }
 
 const TasksPage: FC<TasksPageProps> = () => {
 
-  const [show, setShow] = useState(false);
-  const handleCloseCharacterCreationModal = () => setShow(false);
-  const showCharacterCreationModal = () => setShow(true);
-
   return (
     <div className={styles.tasksPage} data-testid="tasksPage">
-      <Button onClick={showCharacterCreationModal}> Add character </Button>
-      <CreateCharacterModal show={show} close={handleCloseCharacterCreationModal}></CreateCharacterModal>
       <CharacterList></CharacterList>
     </div >
   )
