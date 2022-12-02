@@ -1,14 +1,14 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { act, render, screen, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
 import Servertime from './server-time';
 
 describe('<Servertime />', () => {
-  beforeEach(() => {
-    render(<Servertime />);
+  beforeEach(async () => {
+    await act(async () => render(<Servertime />));
   });
 
-  test('it should mount', () => {
+  test('it should mount', async () => {
 
     const servertime = screen.getByTestId('ServerTime');
 
@@ -24,7 +24,7 @@ describe('<Servertime />', () => {
   test('clock is updating', async () => {
     const time = screen.getByTestId('ServerTime');
     const timeText = time.textContent;
-    await new Promise(r => setTimeout(r, 3000));
+    await act(() => new Promise(r => setTimeout(r, 3000)));
     const time2 = screen.getByTestId('ServerTime');
     expect(time2.textContent).not.toEqual(timeText);
   });
