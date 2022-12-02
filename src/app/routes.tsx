@@ -2,7 +2,7 @@ import HeaderLayout from './header-layout/header-layout';
 import ErrorPage from './error-page/error-page';
 import Checklists from './checklists/checklists';
 import { RouteObject } from 'react-router'
-import Tasks from './tasks/tasks';
+import Tasks from './tasks-page/tasks-page';
 
 const routes: RouteObject[] = [
   {
