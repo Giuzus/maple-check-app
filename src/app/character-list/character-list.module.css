@@ -18,8 +18,33 @@
 .characterRow {
     padding: 10px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.characterRow:hover {
+    background-color: #ddd;
 }
 
 .active {
     background-color: #eee;
+}
+
+.imageWrapper {
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.characterImage {
+    width: 6rem;
+    aspect-ratio: 1/1;
+    transform: scaleX(-1);
+    position: relative;
+    left: -1rem;
+    top: -0.8rem;
+    object-fit: cover;
 }

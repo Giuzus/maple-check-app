@@ -4,6 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 export interface Character {
   id?: string;
   name: string;
+  apiData?: any;
 }
 
 export interface CharactersState {
@@ -25,7 +26,10 @@ export const charactersSlice = createSlice({
       state.characters = state.characters.concat(action.payload)
     },
     removeCharacter: (state, action: PayloadAction<string>) => {
-      state.characters = state.characters.filter((x) => x.id !== action.payload)
+      state.characters = state.characters.filter((char) => char.id !== action.payload)
+    },
+    setCharacterApiData: (state, action: PayloadAction<{ id: string, data: any }>) => {
+      state.characters = state.characters.map((char) => char.id === action.payload.id ? { ...char, apiData: action.payload.data } : char)
     },
     setSelectedCharacter: (state, action: PayloadAction<Character>) => {
       state.selectedCharacter = action.payload
@@ -33,6 +37,6 @@ export const charactersSlice = createSlice({
   }
 });
 
-export const { addCharacter, removeCharacter, setSelectedCharacter } = charactersSlice.actions;
+export const { addCharacter, removeCharacter, setSelectedCharacter, setCharacterApiData } = charactersSlice.actions;
 
 export default charactersSlice.reducer;
