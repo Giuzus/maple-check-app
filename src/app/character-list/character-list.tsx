@@ -22,29 +22,22 @@ const CharacterList: FC<CharacterListProps> = () => {
 
   function onCharacterSelected(character: Character) {
     store.dispatch(setSelectedCharacter(character));
-    loadCharacterInfo(character);
-  }
-
-  async function loadCharacterInfo(character: Character) {
-    const response = await fetch(`https://api.maplestory.gg/v2/public/character/gms/${character.name}`);
-    const data = await response.json();
-    console.log(data);
   }
 
   return (
-    <Col sm={2} className={styles.characterList} data-testid="CharacterList">
-      <div className={styles.charactersWrapper}>
+    <Col sm={2} className={styles.charactersWrapper} data-testid="CharacterList">
+      <ul className={styles.characterList}>
         {
           characters?.map((character) => {
             let classNames = cx([styles.characterRow], { [styles.active]: selectedCharacter?.id === character.id });
             return (
-              <div className={classNames} key={character.id} onClick={() => onCharacterSelected(character)}>
-                <span>{character.name}</span>
-              </div>
+              <li className={classNames} key={character.id} onClick={() => onCharacterSelected(character)}>
+                <a>{character.name}</a>
+              </li>
             )
           })
         }
-      </div>
+      </ul>
 
       <div className={styles.characterRow} onClick={showCharacterCreationModal}>
         <span> + Add character</span>
