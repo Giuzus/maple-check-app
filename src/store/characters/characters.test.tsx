@@ -8,11 +8,13 @@ import charactersReducer, {
 
 describe('Characters store', () => {
   const initialState: CharactersState = {
-    characters: []
+    characters: [],
+    selectedCharacter: null
   };
   it('should handle initial state', () => {
     expect(charactersReducer(undefined, { type: 'unknown' })).toEqual({
       characters: [],
+      selectedCharacter: null
     });
   });
 

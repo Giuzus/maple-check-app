@@ -6,7 +6,7 @@ import Topbar from '../topbar/topbar';
 interface HeaderProps { }
 
 const HeaderLayout: FC<HeaderProps> = () => (
-  <div className={styles.Header} data-testid="Header">
+  <div className={styles.headerLayout} data-testid="Header">
     <Topbar></Topbar>
     <nav>
       <ul>

@@ -7,7 +7,7 @@ const preloadedState = localStorageState ? JSON.parse(localStorageState || '') :
 
 export const store = configureStore({
   reducer: {
-    characters: characterReducer,
+    charactersState: characterReducer,
   },
   preloadedState: preloadedState
 });

@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { act } from 'react-dom/test-utils';
+
 import styles from './server-time.module.css';
 
 interface ServertimeProps { }
@@ -15,9 +15,7 @@ const ServerTime: FC<ServertimeProps> = () => {
   });
 
   function tick() {
-    act(() => {
-      setDate(new Date());
-    });
+    setDate(new Date());
   }
 
   return (

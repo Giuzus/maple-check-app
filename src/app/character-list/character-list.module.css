@@ -1,0 +1,50 @@
+.charactersWrapper {
+    border-right: #eee 1px solid;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.characterList {
+    flex-grow: 1;
+    height: 0px;
+    overflow-y: auto;
+    border-bottom: #eee 1px solid;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.characterRow {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.characterRow:hover {
+    background-color: #ddd;
+}
+
+.active {
+    background-color: #eee;
+}
+
+.imageWrapper {
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.characterImage {
+    width: 6rem;
+    aspect-ratio: 1/1;
+    transform: scaleX(-1);
+    position: relative;
+    left: -1rem;
+    top: -0.8rem;
+    object-fit: cover;
+}
