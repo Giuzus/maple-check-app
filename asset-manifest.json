@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/maple-check-app/static/css/main.52654e29.css",
-    "main.js": "/maple-check-app/static/js/main.2e64d7cb.js",
+    "main.css": "/maple-check-app/static/css/main.99b3bdfb.css",
+    "main.js": "/maple-check-app/static/js/main.646049b8.js",
     "static/js/787.0bd42a79.chunk.js": "/maple-check-app/static/js/787.0bd42a79.chunk.js",
+    "static/media/default-character.png": "/maple-check-app/static/media/default-character.2ad9ee0de6c1de9f8deb.png",
     "index.html": "/maple-check-app/index.html",
-    "main.52654e29.css.map": "/maple-check-app/static/css/main.52654e29.css.map",
-    "main.2e64d7cb.js.map": "/maple-check-app/static/js/main.2e64d7cb.js.map",
+    "main.99b3bdfb.css.map": "/maple-check-app/static/css/main.99b3bdfb.css.map",
+    "main.646049b8.js.map": "/maple-check-app/static/js/main.646049b8.js.map",
     "787.0bd42a79.chunk.js.map": "/maple-check-app/static/js/787.0bd42a79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52654e29.css",
-    "static/js/main.2e64d7cb.js"
+    "static/css/main.99b3bdfb.css",
+    "static/js/main.646049b8.js"
   ]
 }
