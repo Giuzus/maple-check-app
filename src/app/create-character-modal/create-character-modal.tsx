@@ -1,5 +1,6 @@
 import React, { FC, useState } from 'react';
 import { Button, Form, Modal } from 'react-bootstrap';
+import CharacterService from '../../services/character.service';
 import { addCharacter } from '../../store/characters/charactersSlice';
 import { store } from '../../store/store';
 import styles from './create-character-modal.module.css';
@@ -12,12 +13,21 @@ interface CreateCharacterModalProps {
 const CreateCharacterModal: FC<CreateCharacterModalProps> = ({ show, close }) => {
 
   let [name, setName] = useState("")
+  let [saving, setSaving] = useState(false)
 
-  function saveCharacter(event: any) {
+  async function saveCharacter(event: any) {
     event.preventDefault();
 
-    store.dispatch(addCharacter({ name: name }));
+    if (saving) return;
+
+    setSaving(true);
+
+    const apiData = await CharacterService.fetchCharacterInfo(name);
+
+    store.dispatch(addCharacter({ name: name, apiData: apiData }));
+
     closeModal();
+    setSaving(false);
   }
 
   function validateName(): boolean {
@@ -60,9 +70,14 @@ const CreateCharacterModal: FC<CreateCharacterModalProps> = ({ show, close }) =>
             type="submit"
             variant="primary"
             onClick={saveCharacter}
-            disabled={!validateName()}
+            disabled={!validateName() || saving}
             data-testid="saveButton">
-            Save
+
+            {(!saving) ?
+              <> Save</>
+              :
+              <>Saving...</>
+            }
           </Button>
         </Modal.Footer>
       </Modal>
