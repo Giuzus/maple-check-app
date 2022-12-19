@@ -2,7 +2,7 @@ import HeaderLayout from './header-layout/header-layout';
 import ErrorPage from './error-page/error-page';
 import Checklists from './checklists/checklists';
 import { RouteObject } from 'react-router'
-import Tasks from './tasks-page/tasks-page';
+import CharactersPage from './characters-page/characters-page';
 
 const routes: RouteObject[] = [
   {
@@ -12,7 +12,7 @@ const routes: RouteObject[] = [
     children: [
       {
         path: "",
-        element: <Tasks />,
+        element: <CharactersPage />,
       },
       {
         path: "checklists",
