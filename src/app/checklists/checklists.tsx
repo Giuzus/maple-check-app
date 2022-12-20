@@ -32,6 +32,7 @@ const Checklists: FC<ChecklistsProps> = () => (
           {renderCheckbox("Hyper stats", "bossing-hyperStats")}
           {renderCheckbox("Hyper skills", "bossing-hyperSkills")}
           {renderCheckbox("Familiars", "bossing-familiars")}
+          {renderCheckbox("Skill transparency", "bossing-skillTransparency")}
 
           <h2>Buffs</h2>
           {renderCheckbox("Advanced boss rush potion", "bossing-advancedBossRushPotion")}
@@ -40,6 +41,7 @@ const Checklists: FC<ChecklistsProps> = () => (
           {renderCheckbox("Guild attack buff", "bossing-guildAttackBuff")}
           {renderCheckbox("Guild environment buff", "bossing-guildEnvironmentBuff")}
           {renderCheckbox("MVP damage coupon", "bossing-mvpDamageCoupon")}
+          {renderCheckbox("Buff freezers", "bossing-buffFreezers")}
 
           <h2>Equip</h2>
           {renderCheckbox("Damage gear", "bossing-damageGear")}
