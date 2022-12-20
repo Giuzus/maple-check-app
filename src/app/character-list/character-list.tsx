@@ -30,7 +30,7 @@ const CharacterList: FC<CharacterListProps> = () => {
   const selectedCharacter = useSelector((state: RootState) => state.charactersState.selectedCharacter);
 
   return (
-    <Col sm={2} className={styles.charactersWrapper} data-testid="CharacterList">
+    <div className={styles.charactersWrapper} data-testid="CharacterList">
       <ul className={styles.characterList}>
         {
           characters?.map((character) => {
@@ -53,7 +53,7 @@ const CharacterList: FC<CharacterListProps> = () => {
         <span> + Add character</span>
       </div>
       <CreateCharacterModal show={show} close={handleCloseCharacterCreationModal}></CreateCharacterModal>
-    </Col>
+    </div>
   )
 };
 

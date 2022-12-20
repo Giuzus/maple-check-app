@@ -1,5 +1,22 @@
 .charactersPage {
-    flex-grow: 1;
-    display:flex;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "leftMenu content";
+    gap: 10px;
+}
+
+.leftMenu {
+    --menu-height: calc(100vh - var(--navbar-height));
+
+    grid-area: leftMenu;
+    display: flex;
     flex-direction: column;
+    position: -webkit-sticky;
+    position: sticky;
+    top: var(--navbar-height);
+    height: var(--menu-height);
+}
+
+.content {
+    grid-area: content;
 }
