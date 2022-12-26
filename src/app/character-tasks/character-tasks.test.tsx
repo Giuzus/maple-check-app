@@ -6,7 +6,7 @@ import CharacterTasks from './character-tasks';
 describe('<CharacterTasks />', () => {
   test('it should mount', () => {
     render(<CharacterTasks />);
-    
+
     const characterTasks = screen.getByTestId('CharacterTasks');
 
     expect(characterTasks).toBeInTheDocument();
@@ -31,7 +31,7 @@ describe('<CharacterTasks />', () => {
   test('it should display the time until next daily reset', () => {
     throw new Error('Not implemented');
   });
-  
+
   test('it should display the time until next weekly quest reset', () => {
     throw new Error('Not implemented');
   });
