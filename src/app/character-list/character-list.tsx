@@ -7,7 +7,7 @@ import { Character, setCharacterApiData, setSelectedCharacter } from '../../stor
 import { Col } from 'react-bootstrap';
 import CreateCharacterModal from '../create-character-modal/create-character-modal';
 import defaultImage from '../../assets/default-character.png';
-import CharacterService from '../../services/character.service';
+import CharacterService from '../../services/character/character.service';
 
 interface CharacterListProps { }
 

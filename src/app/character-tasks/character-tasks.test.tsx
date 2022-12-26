@@ -11,4 +11,33 @@ describe('<CharacterTasks />', () => {
 
     expect(characterTasks).toBeInTheDocument();
   });
+
+  test('it should display account wide tasks when no character is selected', () => {
+    throw new Error('Not implemented');
+  });
+
+  test('it should display the selected character information', () => {
+    throw new Error('Not implemented');
+  });
+
+  test('it should have a list of daily tasks', () => {
+    throw new Error('Not implemented');
+  });
+
+  test('it should have a list of weekly tasks', () => {
+    throw new Error('Not implemented');
+  });
+
+  test('it should display the time until next daily reset', () => {
+    throw new Error('Not implemented');
+  });
+  
+  test('it should display the time until next weekly quest reset', () => {
+    throw new Error('Not implemented');
+  });
+
+  test('it ', () => {
+    throw new Error('Not implemented');
+  });
+
 });

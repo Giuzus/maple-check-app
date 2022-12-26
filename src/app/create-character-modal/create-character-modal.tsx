@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 import { Button, Form, Modal } from 'react-bootstrap';
-import CharacterService from '../../services/character.service';
+import CharacterService from '../../services/character/character.service';
 import { addCharacter } from '../../store/characters/charactersSlice';
 import { store } from '../../store/store';
 import styles from './create-character-modal.module.css';

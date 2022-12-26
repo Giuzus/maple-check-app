@@ -1,0 +1,62 @@
+{
+    "account": {
+        "daily": {
+            "side": [
+                {
+                    "task": "Account daily side 1",
+                    "image": ""
+                }
+            ]
+        },
+        "weekly": {
+            "side": [
+                {
+                    "task": "Account weekly side 1",
+                    "image": ""
+                }
+            ]
+        }
+    },
+    "character": {
+        "daily": {
+            "side": [
+                {
+                    "task": "Character daily side 1",
+                    "image": ""
+                }
+            ],
+            "quests": [
+                {
+                    "task": "Character daily quest 1",
+                    "image": ""
+                }
+            ],
+            "bosses": [
+                {
+                    "task": "Character daily boss 1",
+                    "image": ""
+                }
+            ]
+        },
+        "weekly": {
+            "side": [
+                {
+                    "task": "Character weekly side 1",
+                    "image": ""
+                }
+            ],
+            "quests": [
+                {
+                    "task": "Character weekly quest 1",
+                    "image": ""
+                }
+            ],
+            "bosses": [
+                {
+                    "task": "Character weekly boss 1",
+                    "image": ""
+                }
+            ]
+        }
+    }
+}
