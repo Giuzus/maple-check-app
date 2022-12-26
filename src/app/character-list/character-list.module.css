@@ -39,12 +39,19 @@
     border-radius: 50%;
 }
 
-.characterImage {
+.image {
     width: 6rem;
     aspect-ratio: 1/1;
-    transform: scaleX(-1);
+    object-fit: cover;
     position: relative;
     left: -1rem;
     top: -0.8rem;
-    object-fit: cover;
+}
+
+.accountImage {
+    scale: 0.5;
+}
+
+.characterImage {
+    transform: scaleX(-1);
 }

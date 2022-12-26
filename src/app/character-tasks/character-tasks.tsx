@@ -1,13 +1,24 @@
 import React, { FC } from 'react';
+import { useSelector } from 'react-redux';
+import { RootState } from '../../store/store';
 import styles from './character-tasks.module.css';
 
 interface CharacterTasksProps { }
 
-const CharacterTasks: FC<CharacterTasksProps> = () => (
-  <div className={styles.characterTasks} data-testid="CharacterTasks">
-    <h1>CharacterTasks Component</h1>
-    <img alt='obunga' src='https://wompampsupport.azureedge.net/fetchimage?siteId=7575&v=2&jpgQuality=100&width=700&url=https%3A%2F%2Fi.kym-cdn.com%2Fphotos%2Fimages%2Fnewsfeed%2F001%2F383%2F477%2F44b.jpg'></img>
-  </div>
-);
+const CharacterTasks: FC<CharacterTasksProps> = () => {
+
+  //get selected character from state
+  const selectedCharacter = useSelector((state: RootState) => state.charactersState.selectedCharacter);
+
+  return (
+    <div className={styles.characterTasks} data-testid="CharacterTasks">
+
+      {!selectedCharacter &&
+        <h1>Account Wide Tasks</h1>
+      }
+
+    </div>
+  )
+};
 
 export default CharacterTasks;

@@ -26,6 +26,6 @@ describe('<CharacterList />', () => {
     const characterList = screen.getByTestId('CharacterList');
     const characterListItems = characterList.querySelectorAll('li');
 
-    expect(characterListItems.length).toBe(3);
+    expect(characterListItems.length).toBe(4);
   });
 });

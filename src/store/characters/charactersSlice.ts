@@ -31,7 +31,7 @@ export const charactersSlice = createSlice({
     setCharacterApiData: (state, action: PayloadAction<{ id: string, data: any }>) => {
       state.characters = state.characters.map((char) => char.id === action.payload.id ? { ...char, apiData: action.payload.data } : char)
     },
-    setSelectedCharacter: (state, action: PayloadAction<Character>) => {
+    setSelectedCharacter: (state, action: PayloadAction<Character | null>) => {
       state.selectedCharacter = action.payload
     }
   }
