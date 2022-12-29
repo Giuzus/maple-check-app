@@ -1,2 +1,42 @@
-.characterTasks {
+.characterTasks {}
+
+.taskItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.taskItem.completed {
+    background-color: #e0ffe0;
+}
+
+
+.taskImage {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 0.5rem;
+    object-fit: cover;
+
+}
+
+.taskName {
+    flex-grow: 1;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 0.5rem;
+    height: 4rem;
+    line-height: 4rem;
+}
+
+.taskName.completed {
+    text-decoration: line-through;
+}
+
+.taskCheckbox {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
 }

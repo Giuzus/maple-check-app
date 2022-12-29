@@ -1,60 +1,252 @@
 {
-    "account": {
-        "daily": {
-            "side": [
-                {
-                    "task": "Account daily side 1",
-                    "image": ""
-                }
-            ]
-        },
-        "weekly": {
-            "side": [
-                {
-                    "task": "Account weekly side 1",
-                    "image": ""
-                }
-            ]
-        }
-    },
     "character": {
         "daily": {
             "side": [
                 {
-                    "task": "Character daily side 1",
-                    "image": ""
+                    "task": "Event Coin cap",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796866657309556776/unknown.png"
+                },
+                {
+                    "task": "Dream Defender",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796863205870796810/unknown.png"
+                },
+                {
+                    "task": "Commerci Trade",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796865682447925268/unknown.png"
+                },
+                {
+                    "task": "Spirit Savior",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796863776515293184/unknown.png"
+                },
+                {
+                    "task": "Hungry Muto",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796862229738946610/unknown.png"
+                },
+                {
+                    "task": "Commerci Party Quest",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796865682447925268/unknown.png"
+                },
+                {
+                    "task": "Erda Spectrum",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796860775833927700/unknown.png"
+                },
+                {
+                    "task": "Redeem Maple Reward Points",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/801152735982387220/92aed8af57d88a93880db9054fe05d41.png"
                 }
             ],
             "quests": [
                 {
-                    "task": "Character daily quest 1",
-                    "image": ""
+                    "task": "Morass",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796864176382410772/unknown.png"
+                },
+                {
+                    "task": "Chu Chu Island",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796861844575879188/unknown.png"
+                },
+                {
+                    "task": "Vanishing Journey",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796860619927846912/unknown.png"
+                },
+                {
+                    "task": "Lachelein",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796862789788368916/unknown.png"
+                },
+                {
+                    "task": "Esfera",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/816857620664549386/unknown.png"
+                },
+                {
+                    "task": "Arcana",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796863506912772096/unknown.png"
                 }
             ],
             "bosses": [
                 {
-                    "task": "Character daily boss 1",
-                    "image": ""
+                    "task": "Zakum",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796869796746362921/unknown.png"
+                },
+                {
+                    "task": "Papulatus",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796871300197908500/unknown.png"
+                },
+                {
+                    "task": "Pink Bean",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796870976302088212/unknown.png"
+                },
+                {
+                    "task": "Velum",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796870620250898482/unknown.png"
+                },
+                {
+                    "task": "Hard Von Leon",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796871173585502238/unknown.png"
+                },
+                {
+                    "task": "Horntail",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796869922978005002/unknown.png"
+                },
+                {
+                    "task": "Pierre",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796870485778104320/unknown.png"
+                },
+                {
+                    "task": "Arkarium",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796872350380326952/unknown.png"
+                },
+                {
+                    "task": "Hilla",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796870093279592478/unknown.png"
+                },
+                {
+                    "task": "Magnus",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796871054198177792/unknown.png"
+                },
+                {
+                    "task": "Von Bon",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796870394349879316/unknown.png"
+                },
+                {
+                    "task": "Crimson Queen",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796870320056434728/unknown.png"
+                },
+                {
+                    "task": "Ranmaru",
+                    "image": "https://cdn.discordapp.com/attachments/804827743648743484/817986694099763210/unknown.png"
+                },
+                {
+                    "task": "Gollux",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796870731307810836/unknown.png"
+                },
+                {
+                    "task": "Hard Magnus",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796871054198177792/unknown.png"
+                },
+                {
+                    "task": "Akechi Mitsuhide",
+                    "image": "https://cdn.discordapp.com/attachments/804827743648743484/998326911208013824/unknown.png"
                 }
             ]
         },
         "weekly": {
             "side": [
                 {
-                    "task": "Character weekly side 1",
+                    "task": "Guild culvert",
+                    "image": ""
+                },
+                {
+                    "task": "Guild Flag Race",
                     "image": ""
                 }
             ],
             "quests": [
                 {
-                    "task": "Character weekly quest 1",
-                    "image": ""
+                    "task": "Scrapyard",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796867395142418473/unknown.png"
+                },
+                {
+                    "task": "Dark World Tree",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796867823594373140/unknown.png"
                 }
             ],
             "bosses": [
                 {
-                    "task": "Character weekly boss 1",
-                    "image": ""
+                    "task": "Chaos Zakum",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796869796746362921/unknown.png"
+                },
+                {
+                    "task": "Damien",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796871859010273340/unknown.png"
+                },
+                {
+                    "task": "Chaos Von Bon",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796870394349879316/unknown.png"
+                },
+                {
+                    "task": "Chaos Papulatus",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796871300197908500/unknown.png"
+                },
+                {
+                    "task": "Chaos Pink Bean",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796870976302088212/unknown.png"
+                },
+                {
+                    "task": "Cygnus",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796872607370575882/unknown.png"
+                },
+                {
+                    "task": "Chaos Pierre",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796870485778104320/unknown.png"
+                },
+                {
+                    "task": "Will",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/816857801120153641/unknown.png"
+                },
+                {
+                    "task": "Lucid",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796872033173766205/unknown.png"
+                },
+                {
+                    "task": "Hard Hilla",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796870093279592478/unknown.png"
+                },
+                {
+                    "task": "Chaos Crimson Queen",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796870320056434728/unknown.png"
+                },
+                {
+                    "task": "Verus Hilla",
+                    "image": "https://cdn.discordapp.com/attachments/804827743648743484/873181947675967528/unknown.png"
+                },
+                {
+                    "task": "Princess No",
+                    "image": "https://cdn.discordapp.com/attachments/804827743648743484/886339367155683348/unknown.png"
+                },
+                {
+                    "task": "Lotus",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796871780689379338/unknown.png"
+                },
+                {
+                    "task": "Chaos Vellum",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796870620250898482/unknown.png"
+                }
+            ]
+        }
+    },
+    "account": {
+        "daily": {
+            "side": [
+                {
+                    "task": "Monster Park",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796864783231746098/unknown.png"
+                },
+                {
+                    "task": "Maple Tour",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796865241098223676/unknown.png"
+                },
+                {
+                    "task": "Fairy Bros daily gift",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796866002306203658/unknown.png"
+                },
+                {
+                    "task": "Legion Coin",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796866240861700156/unknown.png"
+                },
+                {
+                    "task": "Ursus",
+                    "image": "https://cdn.discordapp.com/attachments/804827743648743484/872544611384578178/unknown.png"
+                },
+                {
+                    "task": "Maple M Dailies",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/801149750169567242/maplestory-m-ios-app-image-r225x.png"
+                }
+            ]
+        },
+        "weekly": {
+            "side": [
+                {
+                    "task": "Mu Lung Dojo",
+                    "image": "https://cdn.discordapp.com/attachments/203659165305012224/796868081980276827/unknown.png"
                 }
             ]
         }

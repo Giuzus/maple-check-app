@@ -24,7 +24,7 @@ const CreateCharacterModal: FC<CreateCharacterModalProps> = ({ show, close }) =>
 
     const apiData = await CharacterService.fetchCharacterInfo(name);
 
-    store.dispatch(addCharacter({ name: name, apiData: apiData }));
+    store.dispatch(addCharacter({ name: name, apiData: apiData, tasks: {} }));
 
     closeModal();
     setSaving(false);

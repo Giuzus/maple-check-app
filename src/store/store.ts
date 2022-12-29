@@ -2,7 +2,8 @@ import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import characterReducer from '../store/characters/charactersSlice';
 
 //load persisted state
-const localStorageState = localStorage.getItem('reduxState')
+const localStorageKey = 'reduxState-v2';
+const localStorageState = localStorage.getItem(localStorageKey)
 const preloadedState = localStorageState ? JSON.parse(localStorageState || '') : {};
 
 export const store = configureStore({
@@ -14,7 +15,7 @@ export const store = configureStore({
 
 //Persist store to local storage
 store.subscribe(() => {
-  localStorage.setItem('reduxState', JSON.stringify(store.getState()));
+  localStorage.setItem(localStorageKey, JSON.stringify(store.getState()));
 });
 
 export type AppDispatch = typeof store.dispatch;

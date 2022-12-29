@@ -19,9 +19,9 @@ describe('<CharacterList />', () => {
     renderWithProviders(<CharacterList />);
 
     act(() => {
-      store.dispatch(addCharacter({ name: 'test1' }));
-      store.dispatch(addCharacter({ name: 'test1' }));
-      store.dispatch(addCharacter({ name: 'test1' }));
+      store.dispatch(addCharacter({ name: 'test1', tasks: {} }));
+      store.dispatch(addCharacter({ name: 'test1', tasks: {} }));
+      store.dispatch(addCharacter({ name: 'test1', tasks: {} }));
     });
     const characterList = screen.getByTestId('CharacterList');
     const characterListItems = characterList.querySelectorAll('li');
