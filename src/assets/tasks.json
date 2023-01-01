@@ -233,12 +233,14 @@
                     "image": "https://cdn.discordapp.com/attachments/203659165305012224/796866240861700156/unknown.png"
                 },
                 {
-                    "task": "Ursus",
-                    "image": "https://cdn.discordapp.com/attachments/804827743648743484/872544611384578178/unknown.png"
-                },
-                {
                     "task": "Maple M Dailies",
                     "image": "https://cdn.discordapp.com/attachments/203659165305012224/801149750169567242/maplestory-m-ios-app-image-r225x.png"
+                }
+            ],
+            "bosses": [
+                {
+                    "task": "Ursus",
+                    "image": "https://cdn.discordapp.com/attachments/804827743648743484/872544611384578178/unknown.png"
                 }
             ]
         },

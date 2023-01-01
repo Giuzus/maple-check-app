@@ -14,13 +14,13 @@ export interface Character {
 
 export interface CharactersState {
   characters: Character[];
-  selectedCharacter: Character | null;
+  selectedCharacter: string | undefined;
   accountTasks: { [key: string]: CharacterTask };
 }
 
 const initialState: CharactersState = {
   characters: [],
-  selectedCharacter: null,
+  selectedCharacter: undefined,
   accountTasks: {}
 };
 
@@ -38,7 +38,7 @@ export const charactersSlice = createSlice({
     setCharacterApiData: (state, action: PayloadAction<{ id: string, data: any }>) => {
       state.characters = state.characters.map((char) => char.id === action.payload.id ? { ...char, apiData: action.payload.data } : char)
     },
-    setSelectedCharacter: (state, action: PayloadAction<Character | null>) => {
+    setSelectedCharacter: (state, action: PayloadAction<string | undefined>) => {
       state.selectedCharacter = action.payload
     },
     toggleTask: (state, action: PayloadAction<{ characterId: string | undefined, task: string }>) => {

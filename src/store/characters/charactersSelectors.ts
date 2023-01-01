@@ -5,7 +5,7 @@ export default class CharacterSelectors {
     //TODO: add tests for these selectors
     static getCharacters = (state: RootState) => state.charactersState.characters;
 
-    static getSelectedCharacter = (state: RootState) => state.charactersState.selectedCharacter;
+    static getSelectedCharacter = (state: RootState) => CharacterSelectors.getCharacterById(state, state.charactersState.selectedCharacter!!);
 
     static getCharacterById = (state: RootState, characterId: string) => state.charactersState.characters.find((char) => char.id === characterId);
 

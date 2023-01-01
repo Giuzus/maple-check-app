@@ -1,12 +1,16 @@
 .characterTasks {}
 
+.filter {
+    margin-bottom: 1rem;
+}
+
 .taskItem {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
 }
 
 .taskItem.completed {
@@ -15,8 +19,8 @@
 
 
 .taskImage {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     margin-right: 0.5rem;
     object-fit: cover;
 
@@ -24,11 +28,11 @@
 
 .taskName {
     flex-grow: 1;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1rem;
     margin-right: 0.5rem;
-    height: 4rem;
-    line-height: 4rem;
+    height: 3rem;
+    line-height: 3rem;
+    cursor: pointer;
 }
 
 .taskName.completed {

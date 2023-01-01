@@ -6,13 +6,13 @@ import { useSelector } from 'react-redux';
 import { Character, setCharacterApiData, setSelectedCharacter } from '../../store/characters/charactersSlice';
 import CreateCharacterModal from '../create-character-modal/create-character-modal';
 import defaultImage from '../../assets/default-character.png';
-import mapleLeaf from '../../assets/maple-leaf.png';
 import CharacterService from '../../services/character/character.service';
+import CharacterSelectors from '../../store/characters/charactersSelectors';
 
 interface CharacterListProps { }
 
 async function onCharacterSelected(character: Character | null) {
-  store.dispatch(setSelectedCharacter(character));
+  store.dispatch(setSelectedCharacter(character?.id));
 
   if (!character) return;
   const apiData = await CharacterService.fetchCharacterInfo(character.name);
@@ -28,20 +28,13 @@ const CharacterList: FC<CharacterListProps> = () => {
   const showCharacterCreationModal = () => setShow(true);
 
   let characters = useSelector((state: RootState) => state.charactersState.characters);
-  const selectedCharacter = useSelector((state: RootState) => state.charactersState.selectedCharacter);
+  const selectedCharacter = useSelector(CharacterSelectors.getSelectedCharacter);
 
   let rowClasses: any = cx([styles.characterRow], { [styles.active]: selectedCharacter === null });
 
   return (
     <div className={styles.charactersWrapper} data-testid="CharacterList">
       <ul className={styles.characterList}>
-        <li className={rowClasses} key="account-wide" onClick={() => onCharacterSelected(null)}>
-          <div className={styles.imageWrapper}>
-            <img className={classNames(styles.image, styles.accountImage)} src={mapleLeaf} alt="Maple leaf" />
-          </div>
-          <span>Account wide tasks</span>
-        </li>
-
         {
           characters?.map((character) => {
             rowClasses = cx([styles.characterRow], { [styles.active]: selectedCharacter?.id === character.id });

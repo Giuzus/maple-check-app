@@ -10,7 +10,7 @@ import charactersReducer, {
 describe('Characters store', () => {
   const initialState: CharactersState = {
     characters: [],
-    selectedCharacter: null,
+    selectedCharacter: undefined,
     accountTasks: {}
   };
   it('should handle initial state', () => {
