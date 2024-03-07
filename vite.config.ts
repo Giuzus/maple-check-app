@@ -7,6 +7,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ["**/*.md"],
+  base: "https://giuzus.github.io/vite-react-boilerplate",
   test: {
     environment: "jsdom",
     setupFiles: "./src/test/setup.ts",
