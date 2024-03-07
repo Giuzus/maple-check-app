@@ -9,6 +9,7 @@ This boilerplate provides a minimal setup to get started with React, Vite, and T
 - Vitest
 - @testing-library/react
 - husky
+- Static page deployment
 
 ## Getting Started
 
