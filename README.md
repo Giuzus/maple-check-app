@@ -16,8 +16,8 @@ This boilerplate provides a minimal setup to get started with React, Vite, and T
 To get started with the boilerplate, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/user/react-vite-tailwind-boilerplate.git`
-2. Install dependencies: `npm install` or `yarn install` or `pnpm install`
-3. Start the development server: `npm run dev` or `yarn dev` or `pnpm dev`
+2. Install dependencies: `pnpm install`
+3. Start the development server: `pnpm dev`
 
 ## Available Scripts
 
