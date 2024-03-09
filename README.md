@@ -17,7 +17,7 @@ To get started with the boilerplate, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/user/react-vite-tailwind-boilerplate.git`
 2. Install dependencies: `pnpm install`
-3. Init husky with `npx husky init`
+3. Init husky: `npx husky init`
 4. Start the development server: `pnpm dev`
 
 ## Available Scripts
