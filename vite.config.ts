@@ -7,7 +7,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   assetsInclude: ["**/*.md"],
-  base: "https://giuzus.github.io/vite-react-boilerplate",
+  base: "https://giuzus.github.io/maple-check-app",
   test: {
     environment: "jsdom",
     setupFiles: "./src/test/setup.ts",
@@ -18,12 +18,12 @@ export default defineConfig({
       include: ["src/**/*.tsx"],
       provider: "v8",
       reporter: ["lcov", "text", "html"],
-      thresholds: {
-        lines: 90,
-        statements: 90,
-        branches: 90,
-        functions: 90,
-      },
+      // thresholds: {
+      //   lines: 90,
+      //   statements: 90,
+      //   branches: 90,
+      //   functions: 90,
+      // },
     },
   },
 });

@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Add character > should match snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="join"
+    >
+      <input
+        class="input input-bordered join-item"
+        placeholder="Type here"
+        type="text"
+        value=""
+      />
+      <button
+        class="btn join-item"
+      >
+        Add
+      </button>
+    </div>
+  </div>
+</body>
+`;

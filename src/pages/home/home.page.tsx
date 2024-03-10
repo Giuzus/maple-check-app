@@ -1,3 +1,11 @@
+import AddCharacter from "../../components/AddCharacter/addCharacter.component";
+import CharacterList from "../../components/CharacterList/characterList.component";
+
 export default function Home() {
-  return <h1>/home</h1>;
+  return (
+    <section>
+      <AddCharacter />
+      <CharacterList />
+    </section>
+  );
 }

@@ -3,7 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home/home.page.tsx";
 
 const router = createBrowserRouter([{ path: "/", element: <Home /> }], {
-  basename: "/vite-react-boilerplate",
+  basename: "/maple-check-app",
 });
 
 function App() {

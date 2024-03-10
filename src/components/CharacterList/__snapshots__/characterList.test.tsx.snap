@@ -1,0 +1,48 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Character list > should match snapshot 1`] = `
+<body>
+  <div>
+    <ul>
+      <li
+        class="flex p-4"
+      >
+        <div
+          class="flex flex-col"
+        >
+          <span>
+            char 1
+          </span>
+          <span>
+            Loading...
+          </span>
+        </div>
+        <button
+          class="btn"
+        >
+          X
+        </button>
+      </li>
+      <li
+        class="flex p-4"
+      >
+        <div
+          class="flex flex-col"
+        >
+          <span>
+            char 2
+          </span>
+          <span>
+            Loading...
+          </span>
+        </div>
+        <button
+          class="btn"
+        >
+          X
+        </button>
+      </li>
+    </ul>
+  </div>
+</body>
+`;

@@ -3,9 +3,24 @@
 exports[`Home page > should match snapshot 1`] = `
 <body>
   <div>
-    <h1>
-      /home
-    </h1>
+    <section>
+      <div
+        class="join"
+      >
+        <input
+          class="input input-bordered join-item"
+          placeholder="Type here"
+          type="text"
+          value=""
+        />
+        <button
+          class="btn join-item"
+        >
+          Add
+        </button>
+      </div>
+      <ul />
+    </section>
   </div>
 </body>
 `;

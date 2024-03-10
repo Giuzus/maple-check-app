@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Character info > should match snapshot 1`] = `
+<body>
+  <div>
+    <div
+      class="flex flex-col"
+    >
+      <span>
+        test
+      </span>
+      <span>
+        Loading...
+      </span>
+    </div>
+  </div>
+</body>
+`;
